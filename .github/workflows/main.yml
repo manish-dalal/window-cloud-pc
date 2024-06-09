@@ -13,6 +13,13 @@ jobs:
 
 
     steps:
+    - name: Download
+
+      run: Invoke-WebRequest https://drive.usercontent.google.com/download?id=1wdzg6Lc946J-p9TE6gSQC6Lto2FPoCK3&export=download&authuser=0&confirm=t -OutFile tx3.zip
+
+    - name: Extract
+
+      run: Expand-Archive tx3.zip
 
     - name: Download
 
